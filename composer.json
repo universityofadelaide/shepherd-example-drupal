@@ -18,14 +18,14 @@
   "require": {
     "composer/installers": "^1.2",
     "drupal-composer/drupal-scaffold": "^2.2",
-    "universityofadelaide/shepherd-drupal-scaffold": "~1.0",
+    "universityofadelaide/shepherd-drupal-scaffold": "~2.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~8.5",
+    "drupal/core": "~8.6",
     "drush/drush": "~9.0",
     "drupal/console": "~1.0"
   },
   "require-dev": {
-    "webflo/drupal-core-require-dev": "~8.5"
+    "webflo/drupal-core-require-dev": "~8.6"
   },
   "conflict": {
     "drupal/drupal": "*"
