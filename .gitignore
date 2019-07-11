@@ -4,7 +4,11 @@
 /web/.eslintignore
 /web/.eslintrc.json
 /web/.gitattributes
+/web/robots.txt
 /web/index.php
+/web/.ht.router.php
+/web/.htaccess
+/web/autoload.php
 /web/sites/default/default.settings.php
 /web/sites/default/default.services.yml
 /web/sites/development.services.yml
@@ -17,9 +21,10 @@
 /drush/contrib/
 /vendor/
 /web/core/
+/web/modules/.gitkeep
 /web/modules/contrib/
-/web/themes/contrib/
-/web/profiles/contrib/
+/web/themes/
+/web/profiles/
 /web/libraries/
 
 # Ignore sensitive information
@@ -36,9 +41,12 @@ web/sites/*/services.yml
 
 # Extras
 dsh
+RoboFile.php
 RoboFileBase.php
+docker-compose*.yml
 .DS_Store
 .bash_history
+phpcs.xml
 /.composer/
 /.console/
 /.drush/
@@ -47,3 +55,4 @@ RoboFileBase.php
 /private/
 /web/adminer.php
 *.sql
+/docker/
