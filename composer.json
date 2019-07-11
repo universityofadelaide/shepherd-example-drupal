@@ -10,22 +10,21 @@
     }
   ],
   "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    }
+    {"type": "git", "url": "https://github.com/previousnext/drush_cmi_tools.git"},
+    {"type": "composer", "url": "https://packages.drupal.org/8"}
   ],
   "require": {
     "composer/installers": "^1.2",
     "drupal-composer/drupal-scaffold": "^2.2",
-    "universityofadelaide/shepherd-drupal-scaffold": "~2.0",
+    "universityofadelaide/shepherd-drupal-scaffold": "~3.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~8.6",
+    "drupal/core": "~8.7",
     "drush/drush": "~9.0",
-    "drupal/console": "~1.0"
+    "drupal/console": "~1.0",
+    "drupal/drush-cmi-tools": "dev-8.x-2.x"
   },
   "require-dev": {
-    "webflo/drupal-core-require-dev": "~8.6"
+    "webflo/drupal-core-require-dev": "~8.7"
   },
   "conflict": {
     "drupal/drupal": "*"
