@@ -22,7 +22,7 @@ services:
       SHEPHERD_URL: http://shepherd.test
       SHEPHERD_TOKEN: super-secret-token
       SHEPHERD_INSTALL_PROFILE: demo_umami
-      REDIS_ENABLED: 1
+      REDIS_ENABLED: 0
       SHEPHERD_SECRET_PATH: /code/private
       XDEBUG_CONFIG: "remote_host=docker.for.mac.localhost"
       PHP_IDE_CONFIG: serverName=localhost
