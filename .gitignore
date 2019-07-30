@@ -43,7 +43,6 @@ web/sites/*/services.yml
 dsh
 RoboFile.php
 RoboFileBase.php
-docker-compose*.yml
 .DS_Store
 .bash_history
 phpcs.xml
