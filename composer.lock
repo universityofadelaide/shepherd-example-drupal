@@ -6387,12 +6387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/universityofadelaide/shepherd-drupal-scaffold.git",
-                "reference": "7d01a34010d7efc23d2b8ca24f3fca3194df689e"
+                "reference": "871bb4bc33f8876e265fec8b486ea598709ea6a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/universityofadelaide/shepherd-drupal-scaffold/zipball/7d01a34010d7efc23d2b8ca24f3fca3194df689e",
-                "reference": "7d01a34010d7efc23d2b8ca24f3fca3194df689e",
+                "url": "https://api.github.com/repos/universityofadelaide/shepherd-drupal-scaffold/zipball/871bb4bc33f8876e265fec8b486ea598709ea6a8",
+                "reference": "871bb4bc33f8876e265fec8b486ea598709ea6a8",
                 "shasum": ""
             },
             "require": {
@@ -6416,7 +6416,7 @@
                 "GPL-2.0+"
             ],
             "description": "Composer Plugin for updating the Shepherd Drupal tools.",
-            "time": "2020-11-17T01:35:19+00:00"
+            "time": "2020-11-17T02:32:14+00:00"
         },
         {
             "name": "webflo/drupal-finder",
