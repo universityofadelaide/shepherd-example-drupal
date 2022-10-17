@@ -10,24 +10,22 @@
     }
   ],
   "repositories": [
-    {"type": "git", "url": "https://github.com/previousnext/drush_cmi_tools.git"},
-    {"type": "composer", "url": "https://packages.drupal.org/8"}
+      {"type": "composer", "url": "https://packages.drupal.org/8"},
+      {"type": "vcs", "url": "https://github.com/universityofadelaide/shepherd-drupal-scaffold.git"}
   ],
-  "require": {
+    "require": {
+    "composer-plugin-api": "^2.0",
     "composer/installers": "^1.2",
-    "drupal-composer/drupal-scaffold": "^2.2",
-    "universityofadelaide/shepherd-drupal-scaffold": "^4.0",
+    "universityofadelaide/shepherd-drupal-scaffold": "dev-multiple-memcache-servers",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~8.9",
-    "drush/drush": "~9.0",
-    "drupal/console": "~1.0",
-    "drupal/drush_cmi_tools": "dev-8.x-2.x",
+    "drupal/core": "^9.4",
+    "drush/drush": "^10",
     "predis/predis": "^1.1",
     "drupal/redis": "^1.1",
     "drupal/memcache": "^2.0"
   },
   "require-dev": {
-    "drupal/core-dev": "^8.9"
+    "drupal/core-dev": "^9.4"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -38,13 +36,18 @@
     "bin-dir": "bin/",
     "platform": {
       "php": "7.4"
+    },
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true,
+      "universityofadelaide/shepherd-drupal-scaffold": true
     }
   },
   "scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
     "shepherd-scaffold": "UniversityOfAdelaide\\ShepherdDrupalScaffold\\Plugin::scaffold",
     "post-install-cmd": [
-      "@drupal-scaffold",
       "@shepherd-scaffold"
     ]
   },
@@ -58,10 +61,21 @@
       "drush/contrib/{$name}":        ["type:drupal-drush"]
     },
     "drupal-scaffold": {
-      "initial": {
-        "sites/default/default.services.yml": "sites/default/services.yml",
-        "sites/default/default.settings.php": "sites/default/settings.php"
-      }
+      "allowed-packages": [
+        "drupal/core"
+      ],
+      "locations": {
+        "web-root": "./web/"
+      },
+      "file-mapping": {
+        "[web-root]/sites/default/settings.php": {
+          "mode": "replace",
+          "path": "web/core/assets/scaffold/files/default.settings.php",
+          "overwrite": false
+        }
+      },
+      "composer-exit-on-patch-failure": true,
+      "patches-file": "composer.patches.json"
     }
   }
 }
