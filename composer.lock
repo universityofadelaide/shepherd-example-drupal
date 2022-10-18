@@ -6387,12 +6387,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/universityofadelaide/shepherd-drupal-scaffold.git",
-                "reference": "4e0c6875c703d201275417824c9d6583c9d92d9b"
+                "reference": "74244ca8b1826fc005623137d11afa6a240d007b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/universityofadelaide/shepherd-drupal-scaffold/zipball/4e0c6875c703d201275417824c9d6583c9d92d9b",
-                "reference": "4e0c6875c703d201275417824c9d6583c9d92d9b",
+                "url": "https://api.github.com/repos/universityofadelaide/shepherd-drupal-scaffold/zipball/74244ca8b1826fc005623137d11afa6a240d007b",
+                "reference": "74244ca8b1826fc005623137d11afa6a240d007b",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                 "source": "https://github.com/universityofadelaide/shepherd-drupal-scaffold/tree/multiple-memcache-servers",
                 "issues": "https://github.com/universityofadelaide/shepherd-drupal-scaffold/issues"
             },
-            "time": "2022-10-05T04:18:33+00:00"
+            "time": "2022-10-18T02:35:07+00:00"
         },
         {
             "name": "webflo/drupal-finder",

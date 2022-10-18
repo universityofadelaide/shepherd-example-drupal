@@ -48,3 +48,12 @@ RoboFileBase.php
 /private/
 /web/adminer.php
 *.sql
+
+# Automatically added.
+docker-compose.linux.yml
+docker-compose.osx.yml
+phpcs.xml
+RoboFile.php
+docker/Dockerfile
+docker/xdebug.ini
+docker/php_custom.ini
